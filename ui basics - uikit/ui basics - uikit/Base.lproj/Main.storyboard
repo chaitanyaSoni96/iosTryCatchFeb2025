@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides isEnabled="YES" dynamicTypePreference="11"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ui_basics___uikit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FaD-tH-rdW">
+                                <rect key="frame" x="0.0" y="62" width="440" height="595.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label ajsda laishdaks i hasld asihd asd aslidh alsd aosidha lsd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXE-Md-yrQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="440" height="16.333333333333332"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dragon" translatesAutoresizingMaskIntoConstraints="NO" id="U3I-rG-AEU">
+                                        <rect key="frame" x="0.0" y="24.333333333333329" width="440" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="7lz-YE-LYL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HW-Kz-Yzt">
+                                        <rect key="frame" x="0.0" y="232.33333333333331" width="440" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Zi6-WC-tqI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOi-I9-YNK"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BxP-2M-WI3">
+                                        <rect key="frame" x="0.0" y="284.33333333333331" width="440" height="20.333333333333314"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ti-wO-SW4">
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3v-3u-4Vq">
+                                                <rect key="frame" x="224" y="0.0" width="216" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-Cm-jdX">
+                                        <rect key="frame" x="0.0" y="312.66666666666669" width="440" height="32"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="" image="square.and.arrow.up" catalog="system"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" systemColor="systemBrownColor"/>
+                                        <connections>
+                                            <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="D2u-HV-ngW"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="asdasd" borderStyle="roundedRect" placeholder="Enter Email ID" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="onm-yE-x7e">
+                                        <rect key="frame" x="0.0" y="351.66666666666669" width="440" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
+                                    </textField>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" minimumValueImage="square.and.arrow.up" catalog="system" maximumValueImage="square.and.arrow.up.fill" translatesAutoresizingMaskIntoConstraints="NO" id="x9S-x6-ene">
+                                        <rect key="frame" x="-2" y="393.66666666666669" width="444" height="31"/>
+                                        <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                        <color key="maximumTrackTintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="sliderUpdated:" destination="BYZ-38-t0r" eventType="valueChanged" id="zut-cX-hCn"/>
+                                        </connections>
+                                    </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NpC-Xv-DX5">
+                                        <rect key="frame" x="0.0" y="431.66666666666669" width="442" height="31"/>
+                                        <color key="onTintColor" systemColor="systemGreenColor"/>
+                                        <color key="thumbTintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="switchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="goc-9G-kjV"/>
+                                        </connections>
+                                    </switch>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Qhl-Jp-qUM">
+                                        <rect key="frame" x="0.0" y="470.66666666666663" width="440" height="37"/>
+                                        <color key="color" systemColor="systemIndigoColor"/>
+                                    </activityIndicatorView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-jS-u1Z">
+                                        <rect key="frame" x="0.0" y="515.66666666666663" width="440" height="4"/>
+                                        <color key="progressTintColor" systemColor="systemMintColor"/>
+                                        <color key="trackTintColor" systemColor="systemBrownColor"/>
+                                    </progressView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="y0L-v9-zCm">
+                                        <rect key="frame" x="0.0" y="527.66666666666663" width="440" height="28"/>
+                                        <color key="pageIndicatorTintColor" systemColor="linkColor"/>
+                                        <color key="currentPageIndicatorTintColor" systemColor="systemRedColor"/>
+                                    </pageControl>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" maximumValue="100" stepValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="nf5-c7-CHx">
+                                        <rect key="frame" x="0.0" y="563.66666666666663" width="440" height="32"/>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FaD-tH-rdW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Av9-68-4PO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FaD-tH-rdW" secondAttribute="bottom" id="RWq-3y-qPC"/>
+                            <constraint firstItem="FaD-tH-rdW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tjj-9u-DAk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FaD-tH-rdW" secondAttribute="trailing" id="hNR-cb-jAJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Qhl-Jp-qUM" id="i2t-Nt-sZD"/>
+                        <outlet property="button" destination="2HW-Kz-Yzt" id="OtS-Ea-C6u"/>
+                        <outlet property="label" destination="gXE-Md-yrQ" id="eWp-Rt-Hfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dragon" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="square.and.arrow.up" catalog="system" width="110" height="128"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

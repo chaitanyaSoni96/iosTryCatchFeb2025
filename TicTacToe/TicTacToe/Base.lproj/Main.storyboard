@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYA-o6-ntg">
+                                <rect key="frame" x="20" y="249.66666666666663" width="353" height="353"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ff1-u9-0wi">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-7a-USL">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="111"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO8-Fl-4ta" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hO8-Fl-4ta" secondAttribute="height" multiplier="1:1" id="sXi-Fw-bH4"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAc-Ny-aor"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgu-fX-me6" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="qgu-fX-me6" secondAttribute="height" multiplier="1:1" id="79q-tP-lOv"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQi-PB-6ke"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgs-Vs-WwW" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="242" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Wgs-Vs-WwW" secondAttribute="height" multiplier="1:1" id="buh-Gr-cJT"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdc-TG-n9W"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="qgu-fX-me6" firstAttribute="width" secondItem="qgu-fX-me6" secondAttribute="height" multiplier="1:1" id="C6t-pC-3hW"/>
+                                                    <constraint firstItem="Wgs-Vs-WwW" firstAttribute="width" secondItem="Wgs-Vs-WwW" secondAttribute="height" multiplier="1:1" id="Kuy-Zp-y3Z"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fbm-NN-eIL">
+                                                <rect key="frame" x="0.0" y="121.00000000000003" width="353" height="111"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awU-eH-Emy" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="awU-eH-Emy" secondAttribute="height" multiplier="1:1" id="32H-Hw-nPg"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuh-OE-WGG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSG-QZ-LLu" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="VSG-QZ-LLu" secondAttribute="height" multiplier="1:1" id="ssv-8M-WIP"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1c9-xb-20z"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyh-hk-xbu" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="242" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="eyh-hk-xbu" secondAttribute="height" multiplier="1:1" id="ceY-x3-KQi"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jK2-Od-o8P"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="VSG-QZ-LLu" firstAttribute="width" secondItem="VSG-QZ-LLu" secondAttribute="height" multiplier="1:1" id="BXD-mL-ULf"/>
+                                                    <constraint firstItem="eyh-hk-xbu" firstAttribute="width" secondItem="eyh-hk-xbu" secondAttribute="height" multiplier="1:1" id="MGA-S5-OGd"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="was-UU-tBN">
+                                                <rect key="frame" x="0.0" y="242" width="353" height="111"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKk-q9-e58" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="MKk-q9-e58" secondAttribute="height" multiplier="1:1" id="lHz-s6-1qu"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0X-XC-Lch"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPX-ru-NaI" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="121" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="nPX-ru-NaI" secondAttribute="height" multiplier="1:1" id="y8K-no-AKF"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAp-yu-kDb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVb-S0-mqN" customClass="TicTacButton" customModule="TicTacToe" customModuleProvider="target">
+                                                        <rect key="frame" x="242" y="0.0" width="111" height="111"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="WVb-S0-mqN" secondAttribute="height" multiplier="1:1" id="98P-VS-ckw"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                        <connections>
+                                                            <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHq-kP-n2N"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="WVb-S0-mqN" firstAttribute="width" secondItem="WVb-S0-mqN" secondAttribute="height" multiplier="1:1" id="3Wh-0s-UBv"/>
+                                                    <constraint firstItem="nPX-ru-NaI" firstAttribute="width" secondItem="nPX-ru-NaI" secondAttribute="height" multiplier="1:1" id="GHW-wU-oQI"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ff1-u9-0wi" secondAttribute="height" multiplier="1:1" id="1XY-t2-8wa"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstItem="ff1-u9-0wi" firstAttribute="leading" secondItem="QYA-o6-ntg" secondAttribute="leading" id="Qip-NF-pk4"/>
+                                    <constraint firstAttribute="bottom" secondItem="ff1-u9-0wi" secondAttribute="bottom" id="Rd4-eA-1Mq"/>
+                                    <constraint firstItem="ff1-u9-0wi" firstAttribute="top" secondItem="QYA-o6-ntg" secondAttribute="top" id="VEN-ln-nkJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ff1-u9-0wi" secondAttribute="trailing" id="lv8-Do-xhN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duF-ga-aWW">
+                                <rect key="frame" x="20" y="229.66666666666666" width="353" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QYA-o6-ntg" secondAttribute="trailing" constant="20" id="4Wp-vk-hje">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="QYA-o6-ntg" firstAttribute="top" secondItem="duF-ga-aWW" secondAttribute="bottom" constant="20" id="HHv-9w-yGp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="duF-ga-aWW" secondAttribute="trailing" constant="20" id="KN3-hO-gZu"/>
+                            <constraint firstItem="duF-ga-aWW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WyW-7v-vKc"/>
+                            <constraint firstItem="QYA-o6-ntg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XVb-Um-Nrq">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="QYA-o6-ntg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fUt-gn-W3Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="winnerLabel" destination="duF-ga-aWW" id="yB3-we-Kgn"/>
+                        <outletCollection property="buttons" destination="hO8-Fl-4ta" collectionClass="NSMutableArray" id="OCg-fA-wmo"/>
+                        <outletCollection property="buttons" destination="qgu-fX-me6" collectionClass="NSMutableArray" id="76t-DF-DEA"/>
+                        <outletCollection property="buttons" destination="Wgs-Vs-WwW" collectionClass="NSMutableArray" id="bbM-G1-F75"/>
+                        <outletCollection property="buttons" destination="awU-eH-Emy" collectionClass="NSMutableArray" id="tgS-dU-pUo"/>
+                        <outletCollection property="buttons" destination="VSG-QZ-LLu" collectionClass="NSMutableArray" id="J0Y-UN-IHK"/>
+                        <outletCollection property="buttons" destination="eyh-hk-xbu" collectionClass="NSMutableArray" id="Slo-0O-j5g"/>
+                        <outletCollection property="buttons" destination="MKk-q9-e58" collectionClass="NSMutableArray" id="iBT-tS-RYH"/>
+                        <outletCollection property="buttons" destination="nPX-ru-NaI" collectionClass="NSMutableArray" id="dog-Ur-nA5"/>
+                        <outletCollection property="buttons" destination="WVb-S0-mqN" collectionClass="NSMutableArray" id="PW8-ZX-Qqp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wba-JU-fOn">
+            <objects>
+                <viewController id="Fe6-Bi-Lzi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="76l-dO-dnp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9a-gw-TNa">
+                                <rect key="frame" x="20" y="365.66666666666669" width="353" height="121"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V54-3l-ify">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="V54-3l-ify" secondAttribute="height" multiplier="1:1" id="0Hj-ID-N3Y"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1U-AK-uBv">
+                                        <rect key="frame" x="121" y="0.0" width="111" height="111"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="h1U-AK-uBv" secondAttribute="height" multiplier="1:1" id="3Bb-gl-iDY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDF-c6-eUa">
+                                        <rect key="frame" x="242" y="0.0" width="111" height="111"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="CDF-c6-eUa" secondAttribute="height" multiplier="1:1" id="Oxr-Eb-pVC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="V54-3l-ify" secondAttribute="bottom" constant="10" id="5bl-fi-cc5"/>
+                                    <constraint firstItem="V54-3l-ify" firstAttribute="leading" secondItem="g9a-gw-TNa" secondAttribute="leading" id="77x-5Y-9nj"/>
+                                    <constraint firstAttribute="trailing" secondItem="CDF-c6-eUa" secondAttribute="trailing" id="PtS-ug-1Vb"/>
+                                    <constraint firstItem="CDF-c6-eUa" firstAttribute="leading" secondItem="h1U-AK-uBv" secondAttribute="trailing" constant="10" id="R1B-cL-DvM"/>
+                                    <constraint firstItem="h1U-AK-uBv" firstAttribute="leading" secondItem="V54-3l-ify" secondAttribute="trailing" constant="10" id="Su0-4H-7Ud"/>
+                                    <constraint firstItem="CDF-c6-eUa" firstAttribute="top" secondItem="g9a-gw-TNa" secondAttribute="top" id="bHd-fR-4CD"/>
+                                    <constraint firstAttribute="bottom" secondItem="h1U-AK-uBv" secondAttribute="bottom" constant="10" id="eL2-z9-bHT"/>
+                                    <constraint firstItem="h1U-AK-uBv" firstAttribute="top" secondItem="g9a-gw-TNa" secondAttribute="top" id="jeX-lb-hJn"/>
+                                    <constraint firstAttribute="bottom" secondItem="CDF-c6-eUa" secondAttribute="bottom" constant="10" id="oXO-qW-Eqm"/>
+                                    <constraint firstItem="V54-3l-ify" firstAttribute="top" secondItem="g9a-gw-TNa" secondAttribute="top" id="sKy-UL-csD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GOL-G0-ez7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GOL-G0-ez7" firstAttribute="trailing" secondItem="g9a-gw-TNa" secondAttribute="trailing" constant="20" id="CXl-uf-EcM"/>
+                            <constraint firstItem="g9a-gw-TNa" firstAttribute="leading" secondItem="GOL-G0-ez7" secondAttribute="leading" constant="20" id="XO6-Yv-u51"/>
+                            <constraint firstItem="g9a-gw-TNa" firstAttribute="centerY" secondItem="76l-dO-dnp" secondAttribute="centerY" id="gbv-dh-KPt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UtV-2D-wb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

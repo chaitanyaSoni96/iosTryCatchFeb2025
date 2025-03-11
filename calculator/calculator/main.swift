@@ -15,3 +15,6 @@ if let name: String = readLine() {
     print("Hello \(name)")
     
 }
+//1 + 2
+//3
+//would you like to do more calculations? y/n

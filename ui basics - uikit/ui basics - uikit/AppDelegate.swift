@@ -1,13 +1,13 @@
 //
 //  AppDelegate.swift
-//  uikit basics
+//  ui basics - uikit
 //
-//  Created by Chaitanya Soni on 19/02/25.
+//  Created by Chaitanya Soni on 02/03/25.
 //
 
 import UIKit
 import CoreData
-
+import IQKeyboardManagerSwift
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.shared.isEnabled = true
         return true
     }
 
@@ -41,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "uikit_basics")
+        let container = NSPersistentContainer(name: "ui_basics___uikit")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -79,12 +80,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension AppDelegate {
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        
-    }
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        
-    }
-    
-}
